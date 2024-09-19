@@ -171,3 +171,12 @@ body {
         display: block;
     }
 }
+@media screen and (max-width: 1508px ) {
+    .navbar {
+        /* display: none; Hide full navbar on mobile */
+    }
+    
+    .dropdown-menu.active {
+        display: block;
+    }
+}
