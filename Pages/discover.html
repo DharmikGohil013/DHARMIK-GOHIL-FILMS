@@ -30,9 +30,19 @@
 </xml><![endif]-->
 </head>
   <body>
-    <div class="loader">
-      <div class="justify-content-center jimu-primary-loading"></div>
-    </div>
+    
+    <div class="spinner-container">
+        <div class="circles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
 
     <div class="container">
       <div class="hamburger-menu">
@@ -48,14 +58,14 @@
         <div class="banner">
           <h1>FILM INDUSTRY & VIRSUAL WORLD</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button>Discover now</button>
+          <button onclick="window.location.href='index.html'">Discover now</button>
         </div>
       </header>
 
       <section class="sidebar">
         <ul class="menu">
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Home">Home</a>
+            <a href="index.html" class="menu-link" data-content="Home">Home</a>
           </li>
           <li class="menu-item">
             <a href="#" class="menu-link" data-content="About Us">About Us</a>
@@ -150,7 +160,7 @@
             </p>
           </div>
           <div class="about-us-img-wrapper">
-            <img src="images/house.png" />
+            <img src="../Photos/1.png" />
           </div>
         </div>
       </section>
@@ -166,39 +176,36 @@
               <img src="../Photos/A (1).jpg" alt="CEO" />
             </div>
             <div class="card-info">
-              <h2>John Smith</h2>
+              <h2>DHARMIK GOHIL</h2>
               <h3>CEO</h3>
               <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
+                "The Ceo Of DGF And His Partners. Game Devloper For The Excusion Game Make!"
               </p>
               <button>Read More</button>
             </div>
           </div>
           <div class="card" data-tilt>
             <div class="card-img-wrapper">
-              <img src="images/person-2.jpg" alt="Designer" />
+              <img src="../Photos/deep.jpg" alt="Designer" />
             </div>
             <div class="card-info">
-              <h2>Ann Brown</h2>
-              <h3>Designer</h3>
+              <h2>DEEP GOHIL</h2>
+              <h3>DOCTOR</h3>
               <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
+                "The MBBS deoctor Deep Gohil . Work For DGF Partners ! "
               </p>
               <button>Read More</button>
             </div>
           </div>
           <div class="card" data-tilt>
             <div class="card-img-wrapper">
-              <img src="images/person-3.jpg" alt="Architect" />
+              <img src="../Photos/20220529040901_IMG_9418.JPG" alt="Architect" />
             </div>
             <div class="card-info">
-              <h2>Mary Doe</h2>
-              <h3>Architect</h3>
+              <h2>PARTH GOHIL</h2>
+              <h3>DEVLOPER</h3>
               <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
+                "The Computer Engineer In London . Work For DGF Partners!"
               </p>
               <button>Read More</button>
             </div>
@@ -254,14 +261,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="../JavaScript/tilt.js"></script>
-    <script>
-        // JavaScript to hide the loader after 2 seconds
-        window.onload = function() {
-            setTimeout(function() {
-                document.getElementById('loader').classList.add('hidden');
-                document.getElementById('content').style.display = 'block'; // Show main content after loader
-            }, 1000); // Set to 2000ms (2 seconds)
-        };
-    </script>
   </body>
 </html>

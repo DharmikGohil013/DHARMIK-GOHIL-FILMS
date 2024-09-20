@@ -31,12 +31,13 @@
   }
   
   .circles {
-    width: 8rem;
-    height: 8rem;
-    position: relative;
-    opacity: 0;
-    visibility: hidden;
-    animation: displayCircles 4s;
+    --color: #333;
+    --dim: 1.2rem;
+    width: var(--dim);
+    height: var(--dim);
+    background-color: var(--color);
+    border-radius: 50%;
+    position: absolute;
   }
   
   @keyframes displayCircles {
@@ -69,7 +70,7 @@
     width: 0.7rem;
     height: 0.7rem;
     border-radius: 50%;
-    background-color: #c29525;
+    background-color: #595959;
     margin: -0.4rem 0 0 -0.4rem;
   }
   

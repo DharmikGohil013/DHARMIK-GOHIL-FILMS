@@ -399,10 +399,10 @@ body {
 .notification {
     position: fixed;
     top: 580px;
-    left: 20px;
+    left: 0px;
     background-color: #fff;
     border: 2px solid #f85959;
-    border-radius: 8px;
+    border-radius: 0px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: none; /* Initially hidden */
     padding: 20px;
