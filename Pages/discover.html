@@ -30,17 +30,8 @@
 </xml><![endif]-->
 </head>
   <body>
-    <div class="spinner-container">
-      <div class="circles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <div class="loader">
+      <div class="justify-content-center jimu-primary-loading"></div>
     </div>
 
     <div class="container">
@@ -52,10 +43,10 @@
       </div>
       <header class="header">
         <div class="img-wrapper">
-          <img src="images/bg.jpg" />
+          <img src="../Photos/R.jpeg" />
         </div>
         <div class="banner">
-          <h1>Architecture & Interior Design</h1>
+          <h1>FILM INDUSTRY & VIRSUAL WORLD</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <button>Discover now</button>
         </div>
@@ -172,7 +163,7 @@
         <div class="cards-wrapper">
           <div class="card" data-tilt>
             <div class="card-img-wrapper">
-              <img src="images/person-1.jpg" alt="CEO" />
+              <img src="../Photos/A (1).jpg" alt="CEO" />
             </div>
             <div class="card-info">
               <h2>John Smith</h2>
@@ -242,7 +233,7 @@
       <footer class="footer">
         <div class="footer-content">
           <p class="copyright">
-            Copyright &copy; 2020, CodeAndCreate - All Rights Reserved
+            Copyright &copy; 2020, DHARMIK GOHIL FILMS - All Rights Reserved
           </p>
           <div class="social-list">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -263,5 +254,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="../JavaScript/tilt.js"></script>
+    <script>
+        // JavaScript to hide the loader after 2 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('loader').classList.add('hidden');
+                document.getElementById('content').style.display = 'block'; // Show main content after loader
+            }, 1000); // Set to 2000ms (2 seconds)
+        };
+    </script>
   </body>
 </html>
