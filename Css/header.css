@@ -527,8 +527,10 @@ main {
 }
 
 .big-company p {
-    font-size: 1.5em;
+    font-size: 50px;
     margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
 }
 
 .big-company-logo {
