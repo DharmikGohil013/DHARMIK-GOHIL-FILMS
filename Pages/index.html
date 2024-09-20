@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DHARMIK-GOHIL-FILMS</title>
     <link rel="stylesheet" href="../Css/header.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -16,9 +18,40 @@
                 <span class="company-name">DHARMIK GOHIL FILMS</span>
             </div>
             <nav class="navbar" id="navbar">
-                <input type="text" placeholder="Search the fild of work to DGF ..." class="search-bar">
-                <button class="signin-btn">Sign In</button>
-                <button class="signup-btn">Sign Up</button>
+                
+<form class="form">
+    <label for="search">
+        <input required="" autocomplete="off" placeholder="search in DGF" id="search" type="text">
+        <div class="icon">
+            <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+            </svg>
+            <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+            </svg>
+        </div>
+        <button type="reset" class="close-btn">
+            <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+            </svg>
+        </button>
+    </label>
+</form>
+                 
+                <button>
+                    Sign in
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                
+                    </div>
+                </button>
+                <button>
+                    Sign up
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                
+                    </div>
+                </button>
             </nav>
             <!-- Menu icon (3 horizontal bars) -->
             <div class="menu-toggle" id="menu-toggle">
@@ -26,32 +59,17 @@
                 <span></span>
                 <span></span>
             </div>
-            
-            
-            
         </header>
     
         <!-- Dropdown Menu for Mobile -->
         <div class="dropdown-menu" id="dropdown-menu">
             <ul>
-                <button class="signin-btn">Sign In</button>
-                <button class="signup-btn">Sign Up</button>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Branches</a></li>
-                <li><a href="#">In the World</a></li>
-                <li><a href="#">Represented</a></li>
-            </ul>
-        </div>
-        <div class="dropdown-menu1" id="dropdown-menu1"></div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Branches</a></li>
-                <li><a href="#">In the World</a></li>
-                <li><a href="#">Represented</a></li>
+                <button class="btn">Home</button>
+                <button class="btn">About</button>
+                <button class="btn">Careers</button>
+                <button class="btn">Branch</button>
+                <button class="btn">World</button>
+                <button class="btn">Product</button>
             </ul>
         </div>
         <section id="JAVASCRIPT">
@@ -59,6 +77,48 @@
         </section>
     
     </section>
-    
+    <section class="notifiaction11">
+        <div class="notification" id="notification">
+            <span class="close-button" id="close-button">&times;</span>
+            <img src="../Photos/DHARMIK GOHIL FILMS.png" alt="Discount" class="notification-image">
+            <div class="notification-content">
+                <h2>20% Discount!</h2>
+                <p>Limited time offer. Grab it now!</p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="big-company">
+            <h1>DGF</h1>
+            <p>Leading provider of technology solutions for businesses worldwide.</p>
+            <img src="big-company-logo.jpg" alt="Big Company Logo" class="big-company-logo">
+        </section>
+
+        <section class="small-companies">
+            <h2>Our Partners</h2>
+            <div class="company-list">
+                <div class="company">
+                    <img src="company1-logo.jpg" alt="Company 1 Logo" class="company-logo">
+                    <p>Company 1</p>
+                </div>
+                <div class="company">
+                    <img src="company2-logo.jpg" alt="Company 2 Logo" class="company-logo">
+                    <p>Company 2</p>
+                </div>
+                <div class="company">
+                    <img src="company3-logo.jpg" alt="Company 3 Logo" class="company-logo">
+                    <p>Company 3</p>
+                </div>
+                <div class="company">
+                    <img src="company4-logo.jpg" alt="Company 4 Logo" class="company-logo">
+                    <p>Company 4</p>
+                </div>
+                <div class="company">
+                    <img src="company5-logo.jpg" alt="Company 5 Logo" class="company-logo">
+                    <p>Company 5</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
