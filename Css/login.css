@@ -135,3 +135,54 @@
     font-size: 18px;
     margin-bottom: 1px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* From Uiverse.io by Jedi-hongbin */
+.back {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #cf9f9f;
+
+  /* Positioning the .back in the bottom-right corner */
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.back > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.back:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+.back:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+}
