@@ -1,0 +1,254 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: -8rem;
+    z-index: 10;
+    padding: 3rem;
+    transition: height 0.5s;
+    animation: animateNavbar 0.2s 0.5s forwards;
+}
+
+@keyframes animateNavbar {
+    0% {
+        top: -9rem;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.navbar.change {
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 4rem;
+}
+
+.logo a {
+    font-family: "MADE Soulmaze", sans-serif;
+    font-size: 2.5rem;
+    color: #eee;
+    letter-spacing: 0.1rem;
+}
+
+.logo span {
+    font-family: "MADE Soulmaze", sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #9e0e09;
+}
+
+.nav-list {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+.change .nav-list {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s 0.5s;
+}
+
+.nav-link {
+    font-family: "MADE Soulmaze", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    margin: 2rem 0;
+    transition: color 0.4s;
+}
+
+.nav-link:hover {
+    color: #9e0e09;
+}
+
+/* Main Section Styles */
+
+.main-section {
+    height: 100vh;
+    background-image: url('cinema-bg.jpg'); /* Replace with a luxurious cinema background */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.main-title {
+    font-size: 5rem;
+    color: #d4af37;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+    animation: slideDown 1.5s ease-out;
+}
+
+.main-description {
+    font-size: 1.5rem;
+    max-width: 60%;
+    line-height: 1.8;
+    color: #ccc;
+    animation: slideUp 1.5s ease-out;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie-poster-title {
+    font-size: 3rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.movie-poster-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.movie-poster-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Section Styles */
+
+section {
+    padding: 5rem 2rem;
+    background-color: #111;
+    animation: fadeIn 2s ease-in-out;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #d4af37;
+    margin: 1rem auto;
+}
+
+/* Footer Styles */
+
+.footer {
+    width: 100%;
+    height: 12rem;
+    background-color: #202122;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+}
+
+.footer-nav a {
+    font-family: "MADE Soulmaze", sans-serif;
+    font-size: 2rem;
+    color: #ccc;
+    margin-right: 3rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #862323;
+}
+
+.copyright {
+    font-size: 2rem;
+    color: #ddd;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
