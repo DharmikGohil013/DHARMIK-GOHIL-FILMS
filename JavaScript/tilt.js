@@ -34,9 +34,7 @@
         this.ticking = true;
       };
   
-      /**
-       * Bind mouse movement evens on instance
-       */
+     
       const bindEvents = function () {
         const _this = this;
         $(this).on("mousemove", mouseMove);
@@ -46,9 +44,7 @@
           $(window).on("resize", updateGlareSize.bind(_this));
       };
   
-      /**
-       * Set transition only on mouse leave and mouse enter so it doesn't influence mouse move transforms
-       */
+    
       const setTransition = function () {
         if (this.timeout !== undefined) clearTimeout(this.timeout);
         $(this).css({
@@ -64,9 +60,6 @@
         }, this.settings.speed);
       };
   
-      /**
-       * When user mouse enters tilt element
-       */
       const mouseEnter = function (event) {
         this.ticking = false;
         $(this).css({ "will-change": "transform" });
