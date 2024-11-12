@@ -52,6 +52,7 @@
   }
   
   .logo {
+    width: 300px;
     position: absolute;
     top: 1.5rem;
     left: 4rem;
@@ -622,8 +623,11 @@ button {
     outline: none;
    }
    
-
-
+.locolimg{
+  height: 70px;
+  width: 70px;
+  margin-top: -20px;
+}
 
 
 
